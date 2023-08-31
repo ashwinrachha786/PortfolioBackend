@@ -6,6 +6,7 @@ import json
 from datetime import datetime
 from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
 from langchain.vectorstores import Chroma
+from langchain.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings, SentenceTransformerEmbeddings
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.prompts import PromptTemplate
