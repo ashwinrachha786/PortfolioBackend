@@ -21,6 +21,7 @@ COPY backend/app/llm_engine.py .
 
 # Copy the vector_store directory into the container
 COPY backend/app/vector_store /backend/vector_store
+COPY backend/app/chroma_db_ashwin /backend/chroma_db_ashwin
 
 # Specify the command to run on container start
 CMD ["python", "main.py"]
