@@ -3,6 +3,9 @@ FROM python:3.8-slim
 # Set the working directory in the Docker container
 WORKDIR /backend
 
+# Install necessary system packages, including a C++ compiler with C++11 support
+RUN apt-get update && apt-get install -y build-essential
+
 # Copy the requirements file into the container
 COPY backend/app/requirements.txt .
 
